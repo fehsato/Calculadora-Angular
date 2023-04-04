@@ -10,19 +10,25 @@ export class AppComponent {
 
   num1 = 0;
   num2 = 0;
-  resp = 0
+  resp = '0';
 
-
-  somar(): void{
-    this.num1 + this.num2
-    return this.somar() 
-    
-
-
+  somar(): void {
+    this.resp = `${this.num1 + this.num2}`;
   }
 
-  
-  
+  dividir(): void {
+    this.resp = `${this.num1 / this.num2}`;
+  }
+
+  subtrair(): void {
+    this.resp = `${this.num1 - this.num2}`;
+  }
+
+  multiplicar(): void {
+    this.resp = `${this.num1 * this.num2}`;
+  }
+
  
+
 }
 
